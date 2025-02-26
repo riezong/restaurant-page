@@ -3,6 +3,7 @@
 import { initialPageLoad } from './initial-page-load';
 import { menu } from './menu';
 import { contact } from './contact';
+import './style.css';
 
 const tabSwitcher = (function () {
 	// event listeners
