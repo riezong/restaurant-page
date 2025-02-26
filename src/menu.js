@@ -1,4 +1,4 @@
-const menu = (function () {
+const menu = function () {
 	const Content = document.querySelector('#content');
 	const headline = document.createElement('h1');
 	headline.setAttribute('class', 'headline');
@@ -8,6 +8,6 @@ const menu = (function () {
 	bio.setAttribute('class', 'bio');
 	bio.textContent = 'Lorem Ipsum';
 	Content.appendChild(bio);
-})();
+};
 
 export { menu };
