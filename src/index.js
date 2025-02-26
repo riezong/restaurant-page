@@ -1,1 +1,3 @@
-alert('Restaurant Page');
+// alert('Restaurant Page');
+
+import { initialPageLoad } from './initial-page-load';
