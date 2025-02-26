@@ -5,7 +5,13 @@
     margin: 0;}
 body {
     line-height: 1.5;  -webkit-font-smoothing: antialiased;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
 img, picture, video, canvas, svg {
     display: block;  max-width: 100%;}
 input, button, textarea, select {
@@ -18,3 +24,28 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;}
 #root, #__next {
     isolation: isolate;}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    margin: auto;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+    /* color: white; */
+    background-color: white;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+#content {
+    width: 80%;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: white;
+}

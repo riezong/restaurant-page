@@ -29,12 +29,10 @@ const tabSwitcher = (function () {
 		}
 	}
 	btn.addEventListener('click', handleClick);
-
-	// clear DOM
-	// render DOM
 })();
 
 const clearPage = function () {
+	// clear DOM
 	const Content = document.querySelector('#content');
 	while (Content.firstChild) {
 		Content.removeChild(Content.lastChild);
