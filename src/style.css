@@ -2,11 +2,14 @@
 *, *::before, *::after {
     box-sizing: border-box;}
 * {
-    margin: 0;}
+    margin: 0;
+    --accent-color: orange;
+    --dark-color: #333333;
+    --light-color: #cccccc;
+}
 body {
     line-height: 1.5;  -webkit-font-smoothing: antialiased;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,18 +28,50 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;}
 
+header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    background: var(--accent-color);
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    color: white;
+    background-color: white;
+}
+
+#cta {
+    padding: 8px 12px;
+    border-radius: 24px;
+    color: var(--accent-color);
+    background-color: white;
+}
+
 nav {
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.nav-left {
     display: flex;
     gap: 1rem;
 }
 
 button {
-    margin: auto;
-    padding: 4px 12px;
+    margin: none;
+    padding: none;
     border: none;
-    border-radius: 8px 8px 0px 0px;
-    /* color: white; */
-    background-color: white;
+    /* border-radius: 8px 8px 0px 0px; */
+    color: white;
+    background-color: orange;
+    font-weight: 900;
 }
 
 button:hover {
@@ -44,8 +79,65 @@ button:hover {
 }
 
 #content {
-    width: 80%;
-    padding: 2rem;
+    width: 100vw;
     border-radius: 8px;
     background-color: white;
+}
+
+#hero {
+    height: 500px;
+    padding: 2rem;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#foodCategories {
+    height: max-content;
+    padding: 2rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category div {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: orange;
+}
+
+#foodRecipes {
+    height: 80px;
+    padding: 2rem;
+    background: whitesmoke;
+}
+
+.recipes {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.recipes li {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+}
+
+h1 {
+    color: var(--accent-color);
 }

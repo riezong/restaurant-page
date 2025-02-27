@@ -1,6 +1,6 @@
 // alert('Restaurant Page');
 
-import { initialPageLoad } from './initial-page-load';
+import { home } from './initial-page-load';
 import { menu } from './menu';
 import { contact } from './contact';
 import './style.css';
@@ -14,7 +14,7 @@ const tabSwitcher = (function () {
 			case 'home':
 				console.log('Home menu item was clicked');
 				clearPage();
-				initialPageLoad();
+				home();
 				break;
 			case 'menu':
 				console.log('Menu menu item was clicked');
